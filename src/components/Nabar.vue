@@ -24,10 +24,21 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div :class="{ 'block': isMobileOpen, 'hidden': !isMobileOpen}" class="md:flex items-center">
           <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-            <a class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" href="#">Home</a>
-            <a class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" href="#">Blog</a>
-            <a class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" href="#">Compoents</a>
-            <a class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0" href="#">Courses</a>
+               <router-link
+                to="/"
+                class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0">
+                 Home
+               </router-link>
+            <router-link
+                to="/about"
+                class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0">
+              About
+            </router-link>
+            <router-link
+                to="/404"
+                class="my-1 text-sm text-gray-700 leading-5 hover:text-blue-600 hover:underline md:mx-4 md:my-0">
+              404
+            </router-link>
           </div>
 
           <div class="flex items-center py-2 -mx-1 md:mx-0">
